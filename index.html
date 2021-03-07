@@ -4,13 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Final</title>
+  <title>Home Page</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
-  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
+  <link href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<body>
-  <div class="sign-in-or-sign-out"></div>
+<body class= "homepage text-gray-700 bg-gray-100"> 
+  <div class="sign-in-or-sign-out pt-4 px-16 text-white text-center">
+    Sing Out
+     <!-- JavaScript puts stuff here -->
+  </div>
+  
+  <div class= "flex w-full h-screen justify-center items-center" id= "quiz">
+    <div clas= "w-full max-w-xl">
+      <h1 class= "font-bold text-5xl text-center text-purple-800">
+          Subject Quiz
+      </h1>
+      <div class= "bg-white p-12 rounded-lg shadow-lg w-full m-8">
+        <p class= "text-2xl font-bold">Question #</p>
+        <label 
+            for="x"
+            class= "block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg">
+            <input type="answer" id="" class="hidden"/>
+            Answer A
+        </label>
+        <label 
+            for="x"
+            class= "block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg">
+            <input type="answer" id="" class="hidden"/>
+            Answer B
+          </label>
+        <label 
+            for="x"
+            class= "block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg">
+            <input type="answer" id="" class="hidden"/>
+            Answer C
+          </label>
+        <label 
+            for="x"
+            class= "block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg">
+            <input type="answer" id="" class="hidden"/>
+            Answer D
+          </label>
+  </div>
+
+    </div>
+
+  </div>
  
   <!-- Put the Firebase config here -->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -21,7 +61,14 @@
 
   <script>
     // Your web app's Firebase configuration
-    var firebaseConfig = {} // replace
+    var firebaseConfig = {
+    apiKey: "AIzaSyCHLwKwwCYvO5-KRko0nY7zVfp3bYXLwJc",
+    authDomain: "kiei-451-d3562.firebaseapp.com",
+    projectId: "kiei-451-d3562",
+    storageBucket: "kiei-451-d3562.appspot.com",
+    messagingSenderId: "88179996439",
+    appId: "1:88179996439:web:762dd3ec55e16341e66952"
+    } // replace
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
