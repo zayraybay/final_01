@@ -23,6 +23,17 @@ firebase.auth().onAuthStateChanged(async function(user) {
 
   }) //closes sign-out event listener
 
+  //Selects where the topic list is and populates the list
+  let topicListClass = document.querySelector('#topiclist')
+  let topicList = ["Addition", "Subtraction", "Algebra"]
+  
+  for(let i =0; i<topicList.length; i++)
+  {
+    topicListClass.insertAdjacentHTML("beforeend",`<div class="w-1/5 p-4 topic-${topicList[i]}">
+    <a href="#" class="topic-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">${topicList[i]}</a>
+  </div>`)
+  }
+
   } else {
     // Signed out
     console.log('user signed out')
