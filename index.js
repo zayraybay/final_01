@@ -13,11 +13,12 @@ firebase.auth().onAuthStateChanged(async function(user) {
 
   let currentUser = user.displayName
   document.querySelector('.sign-in-or-sign-out').innerHTML = `
-  <div class="text-white-500 bold">Signed in as ${currentUser}</div>
-  <a href="#" class="sign-out text-purple-400 underline">Sign Out</a>
+  <div class="text-purple-500 bold py-2">Signed in as ${currentUser}</div>
+  <a href="#" class="sign-out text-white bg-purple-500 hover:bg-purple-400 focus:shadow-outline rounded mt-2 px-2 py-1 underline">Sign Out</a>
   `
   document.querySelector('.sign-out').addEventListener('click', function(event){
       event.preventDefault()
+      console.log('sign out clicked')
       firebase.auth().signOut()
       document.location.href= "index.html"
 
