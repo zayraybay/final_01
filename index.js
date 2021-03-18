@@ -26,18 +26,18 @@ firebase.auth().onAuthStateChanged(async function(user) {
 
   //Selects where the topic list is and populates the list
   let topicListClass = document.querySelector('#topiclist')
-  let topicList = ["Addition", "Subtraction", "Algebra"]
+  let topicList = ["Addition", "Subtraction", "Multiplication"]
   
   for(let i =0; i<topicList.length; i++)
-  {
-    topicListClass.insertAdjacentHTML("beforeend",`<div class="w-1/5 p-4 topic-${topicList[i]}">
-    <a href="#" class="topic-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">${topicList[i]}</a>
-  </div>`)
-    document.querySelector(`.topic-${topicList[i]}`).addEventListener('click', async function(event){
-      event.preventDefault()
-      console.log(`${topicList[i]} was clicked` )
-    })
-  }
+    {
+        topicListClass.insertAdjacentHTML("beforeend",`<div class="w-1/5 p-4 topic-${topicList[i]}">
+        <a href="${topicList[i]}.html" class="topic-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">${topicList[i]}</a>
+        </div>`)
+        document.querySelector(`.topic-${topicList[i]}`).addEventListener('click', async function(event){
+          event.preventDefault()
+          console.log(`${topicList[i]} was clicked` )
+      })
+    }
 
   } else {
     // Signed out

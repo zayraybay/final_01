@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TEST_Home Page</title>
+  <title>Home Page</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
   <link href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -17,48 +17,14 @@
   <div class="sign-in-or-sign-out pt-4 px-16 text-purple-800 text-center">
      <!-- JavaScript puts stuff here -->
   </div>
-  <div class= "flex w-full h-screen justify-center items-center" id= "topiclist">
-  
-  </div>
-  
-  
-  <div class= "flex w-full h-screen justify-center items-center" id= "quiz">
-    <div clas= "w-full max-w-xl">
-      <h1 class= "font-bold text-5xl text-center text-purple-800">
-          Subject Quiz
-      </h1>
-      <div class= "bg-white p-12 rounded-lg shadow-lg w-full m-8">
-        <p class= "text-2xl font-bold">Question #</p>
-        <label 
-            for="x"
-            class= "block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg">
-            <input type="answer" id="" class="hidden"/>
-            Answer A
-        </label>
-        <label 
-            for="x"
-            class= "block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg">
-            <input type="answer" id="" class="hidden"/>
-            Answer B
-          </label>
-        <label 
-            for="x"
-            class= "block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg">
-            <input type="answer" id="" class="hidden"/>
-            Answer C
-          </label>
-        <label 
-            for="x"
-            class= "block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg">
-            <input type="answer" id="" class="hidden"/>
-            Answer D
-          </label>
-  </div>
 
-    </div>
+  <!-- <div class= "flex w-full h-screen justify-center items-center" id= "topiclist"> -->
+  <!-- </div> -->
 
-  </div>
- 
+  <a href="Addition.html" class="topic-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">Addition</a>
+  <a href="Subtraction.html" class="topic-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">Subtraction</a>
+  <a href="Multiplication.html" class="topic-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">Multiplication</a>
+
   <!-- Put the Firebase config here -->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
