@@ -31,7 +31,7 @@ firebase.auth().onAuthStateChanged(async function(user) {
   for(let i =0; i<topicList.length; i++)
     {
         topicListClass.insertAdjacentHTML("beforeend",`<div class="w-1/5 p-4 topic-${topicList[i]}">
-        <a href="${topicList[i]}.html" class="topic-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">${topicList[i]}</a>
+        <a href="${topicList[i]}.html" class="topic-button block text-center text-white bg-green-500 hover:bg-green-400 mt-4 px-4 py-2 rounded">${topicList[i]}</a>
         </div>`)
         document.querySelector(`.topic-${topicList[i]}`).addEventListener('click', async function(event){
           event.preventDefault()
