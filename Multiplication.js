@@ -6,6 +6,9 @@ firebase.auth().onAuthStateChanged(async function (user) {
 
         let questions = await db.collection('subjects').doc('multiplication').get()
         let questionsList = questions.data()
+
+        // let questions = await fetch ('/.netlify/functions/getmultiplication')
+        // let questionsList = await questions.json()
         console.log(questionsList)
         console.log(questionsList.first.question)
         let quizDisplay = document.querySelector('#quiz')

@@ -3,9 +3,11 @@ firebase.auth().onAuthStateChanged(async function (user) {
 
     if (user) {
 
-
         let questions = await db.collection('subjects').doc('addition').get()
         let questionsList = questions.data()
+
+        // let questions = await fetch ('/.netlify/functions/getaddition')
+        // let questionsList = await questions.json()
         console.log(questionsList)
         console.log(questionsList.first.question)
         let quizDisplay = document.querySelector('#quiz')
