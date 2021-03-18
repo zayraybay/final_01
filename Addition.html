@@ -52,6 +52,28 @@
     </div>
 
     <a href="index.html" class="home-button block text-center text-white bg-blue-300 hover:bg-blue-200 mt-4 px-4 py-2 rounded">Go Home</a>
+     <!-- Put the Firebase config here -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <!-- Firebase Auth -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyCHLwKwwCYvO5-KRko0nY7zVfp3bYXLwJc",
+    authDomain: "kiei-451-d3562.firebaseapp.com",
+    projectId: "kiei-451-d3562",
+    storageBucket: "kiei-451-d3562.appspot.com",
+    messagingSenderId: "88179996439",
+    appId: "1:88179996439:web:762dd3ec55e16341e66952"
+    } // replace
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="Addition.js"></script>
 </body>
 
 </html>
