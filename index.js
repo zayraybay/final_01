@@ -35,12 +35,6 @@ firebase.auth().onAuthStateChanged(async function(user) {
   let topicListClass = document.querySelector('#topiclist')
   let topicList = ["Addition", "Subtraction", "Multiplication"]
   
-<<<<<<< HEAD
-  for(let i =0; i<topicList.length; i++)
-    {
-        topicListClass.insertAdjacentHTML("beforeend",`<div class="w-1/5 p-4 topic-${topicList[i]}">
-        <a href="${topicList[i]}.html" class="topic-button block text-center text-white bg-green-500 hover:bg-green-400 mt-4 px-4 py-2 rounded">${topicList[i]}</a>
-=======
   // for(let i =0; i<topicList.length; i++)
   //   {
       // topicListClass.insertAdjacentHTML("beforeend",`<div class="w-1/5 p-4 topic-${topicList[i]}">
@@ -48,7 +42,6 @@ firebase.auth().onAuthStateChanged(async function(user) {
         <a href="Addition.html" class="topic-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">Addition</a>
         <a href="Subtraction.html" class="topic-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">Subtraction</a>
         <a href="Multiplication.html" class="topic-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">Multiplication</a>
->>>>>>> 379839df34d6007f86072316181ccf1675a48b72
         </div>`)
       //   document.querySelector(`.topic-${topicList[i]}`).addEventListener('click', async function(event){
       //     event.preventDefault()
