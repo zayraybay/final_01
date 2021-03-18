@@ -36,6 +36,7 @@ firebase.auth().onAuthStateChanged(async function(user) {
         document.querySelector(`.topic-${topicList[i]}`).addEventListener('click', async function(event){
           event.preventDefault()
           console.log(`${topicList[i]} was clicked` )
+          document.location.href = `${topicList[i]}.html`
       })
     }
 
