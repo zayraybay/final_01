@@ -21,3 +21,25 @@ firebase.auth().onAuthStateChanged(async function(user) {
         console.log('sign out clicked')
         firebase.auth().signOut()
         document.location.href= "index.html"
+
+
+
+    } else {
+        // Signed out
+        console.log('user signed out')
+    
+        // Initializes FirebaseUI Auth
+        let ui = new firebaseui.auth.AuthUI(firebase.auth())
+    
+        // FirebaseUI configuration
+        let authUIConfig = {
+          signInOptions: [
+            firebase.auth.EmailAuthProvider.PROVIDER_ID
+          ],
+          signInSuccessUrl: 'index.html'
+        }
+    
+        // Starts FirebaseUI Auth
+        ui.start('.sign-in-or-sign-out', authUIConfig)
+      }
+    })
