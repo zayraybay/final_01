@@ -1,6 +1,6 @@
 let db = firebase.firestore()
-    
-let questions = db.collection('subjects').doc('addition').get()
+      
+let questions = db.collection('subjects').doc('multiplication').get()
 console.log(questions)
 
 
